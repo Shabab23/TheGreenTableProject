@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | GreenTable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --forest: #1b4332; --leaf: #2d6a4f; --accent: #ff9f1c; --cream: #f8f9fa; }
+        body { background-color: var(--cream); font-family: 'Segoe UI', sans-serif; }
+        .navbar { background-color: var(--forest) !important; border-bottom: 4px solid var(--accent); }
+        .service-card { border: none; border-top: 5px solid var(--leaf); transition: 0.3s; margin-bottom: 20px; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .category-badge { background-color: var(--accent); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8em; }
+        footer { background-color: var(--forest); color: white; padding: 40px 0; margin-top: 50px; }
+        .interactive-img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">GreenTable</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="providers.html">Providers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="fw-bold mb-4 text-center" style="color: var(--forest);">Our Services</h1>
+        <p class="lead text-center mb-5">We provide comprehensive solutions to reduce food waste and feed communities through organized collection, distribution, and education.</p>
+
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card service-card shadow">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h4 class="card-title">Surplus Food Collection</h4>
+                            <span class="category-badge">Collection</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=1470&auto=format&fit=crop" class="img-fluid rounded mb-3" alt="Food collection">
+                        <p class="card-text">We partner with local retailers, restaurants, and farms to collect surplus food that would otherwise go to waste. Our trained volunteers ensure safe handling and timely pickup.</p>
+                        <ul class="list-unstyled">
+                            <li>✓ Daily collection routes</li>
+                            <li>✓ Quality inspection protocols</li>
+                            <li>✓ Temperature-controlled transport</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card service-card shadow">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h4 class="card-title">Community Distribution</h4>
+                            <span class="category-badge">Distribution</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1470&auto=format&fit=crop" class="img-fluid rounded mb-3" alt="Food distribution">
+                        <p class="card-text">We distribute collected food to community centers, shelters, and families in need through our network of distribution hubs and volunteer drivers.</p>
+                        <ul class="list-unstyled">
+                            <li>✓ Equitable distribution system</li>
+                            <li>✓ Emergency response support</li>
+                            <li>✓ Nutritional guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card service-card shadow">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h4 class="card-title">Volunteer Coordination</h4>
+                            <span class="category-badge">Operations</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=1474&auto=format&fit=crop" class="img-fluid rounded mb-3" alt="Volunteers">
+                        <p class="card-text">Our volunteer program connects passionate individuals with meaningful opportunities to contribute to food security in their communities.</p>
+                        <ul class="list-unstyled">
+                            <li>✓ Training and certification</li>
+                            <li>✓ Flexible scheduling</li>
+                            <li>✓ Impact tracking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card service-card shadow">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h4 class="card-title">Education & Awareness</h4>
+                            <span class="category-badge">Education</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1471&auto=format&fit=crop" class="img-fluid rounded mb-3" alt="Education">
+                        <p class="card-text">We educate communities about food waste reduction, sustainable practices, and the importance of food security through workshops and outreach programs.</p>
+                        <ul class="list-unstyled">
+                            <li>✓ School programs</li>
+                            <li>✓ Corporate workshops</li>
+                            <li>✓ Community events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="fw-bold mb-4 mt-5" style="color: var(--forest);">Service Categories Overview</h2>
+        <table class="table table-striped bg-white shadow-sm mb-5">
+            <thead class="table-dark">
+                <tr>
+                    <th>Service</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Surplus Food Collection</td>
+                    <td>Collection</td>
+                    <td>Partnering with retailers to collect excess food</td>
+                </tr>
+                <tr>
+                    <td>Community Distribution</td>
+                    <td>Distribution</td>
+                    <td>Delivering food to those in need</td>
+                </tr>
+                <tr>
+                    <td>Volunteer Coordination</td>
+                    <td>Operations</td>
+                    <td>Managing volunteer activities and training</td>
+                </tr>
+                <tr>
+                    <td>Education & Awareness</td>
+                    <td>Education</td>
+                    <td>Promoting food waste reduction knowledge</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="fw-bold mb-4" style="color: var(--forest);">Interactive Hub Map</h2>
+        <p class="mb-3">Click the <strong>left</strong> or <strong>right</strong> side of the image for status updates on our collection and distribution hubs.</p>
+        <img src="Voluntiers.jpg" usemap="#hubmap" class="img-fluid rounded border shadow interactive-img" id="interactive-img" alt="Hub map">
+        <map name="hubmap" id="hubmap">
+            <area shape="rect" coords="0,0,500,1000" href="javascript:void(0)" onclick="alert('Collection Hub: Active - Collecting surplus food from 15+ partners today')">
+            <area shape="rect" coords="501,0,1000,1000" href="javascript:void(0)" onclick="alert('Distribution Center: Ready - Serving 500+ families this week')">
+        </map>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>GreenTable</h5>
+                    <p>Reducing food waste, feeding communities.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Site Map</h5>
+                    <a href="index.html" class="text-white mx-1">Home</a> |
+                    <a href="services.html" class="text-white mx-1">Services</a> |
+                    <a href="providers.html" class="text-white mx-1">Providers</a> |
+                    <a href="contact.html" class="text-white mx-1">Contact</a>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0">John Ezekiel Shaban | CS - BM14 | 2026-2027</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function fixMap() {
+            const img = document.getElementById('interactive-img');
+            if (img) {
+                const areas = document.getElementsByTagName('area');
+                const w = img.clientWidth;
+                const h = img.clientHeight;
+                if (areas.length >= 2) {
+                    areas[0].coords = `0,0,${Math.floor(w/2)},${h}`;
+                    areas[1].coords = `${Math.floor(w/2)},0,${w},${h}`;
+                }
+            }
+        }
+        window.onload = fixMap;
+        window.onresize = fixMap;
+    </script>
+</body>
+</html>
